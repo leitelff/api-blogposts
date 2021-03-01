@@ -1,10 +1,25 @@
 # API-BLOGPOSTS
 API de CRUD de posts de blogs. Api desenvolvida para [desafio back-end da Trybe](https://github.com/betrybe/backend-test).  A API consiste em 11 endpoints para gerenciar usuários e posts. O projeto foi desenvolvido com em JavaScript, NodeJs (14.x), utilizando o framework [AdonisJS (4.1)](https://adonisjs.com/).
 Uma versão, publicada pela plataforma heroku, está disponível [aqui](https://api-blogposts.herokuapp.com/).
+## Índice
+1. [Endpoints](#endpoints)
+	1.1 [Adicionar Usuário](#adduser) 
+	1.2 [Fazer Login](#login)
+	1.3 [Listar Usuários](#lstuser)
+	1.4 [Consultar Usuário](#getuser) 
+	1.5 [Remover Usuário](#deluser) 
+	1.6 [Adicionar Post](#addpost) 
+	1.7 [Listar Posts](#lstpost) 
+	1.8  [Consultar Post](#getpost)
+	1.9   [Editar Post](#editpost)
+	1.10 [Buscar Post](#searchpost) 
+	1.11 [Remover Post](#delpost) 
+2. [Autenticação](#autenticação)
+3. [Deploy](#deploy)
+
 
 ## ENDPOINTS
-
-### Adicionar Usuário
+### Adicionar Usuário <a id="adduser"></a>
 Este endpoint cria um usuário.
 
 **Requisição HTTP**
@@ -26,7 +41,7 @@ Este endpoint cria um usuário.
         "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTYxNDU3NDM3MH0.Pb4J5QMQIq1FFcKPAZ8BT6GSHIqL1Et1flH6-wLVVQi"
     }
   -------------
-### Fazer Login
+### Fazer Login <a id="login"></a>
 Este endpoint gera um token (jwt) para autenticação do usuário.
 
 **Requisição HTTP**
@@ -46,7 +61,7 @@ Este endpoint gera um token (jwt) para autenticação do usuário.
         "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTYxNDU3NDM3MH0.Pb4J5QMQIq1FFcKPAZ8BT6GSHIqL1Et1flH6-wLVVQi"
     }
   -------------
-### Listar Usuários
+### Listar Usuários <a id="lstuser"></a>
 Este endpoint lista todos os usuários. Exige autenticação.
 
 **Requisição HTTP**
@@ -72,7 +87,7 @@ Este endpoint lista todos os usuários. Exige autenticação.
         }
     ]
   -------------
-### Consultar Usuário
+### Consultar Usuário <a id="getuser"></a>
 Este endpoint retorna detalhes de um usuário. Exige autenticação.
 
 **Requisição HTTP**
@@ -97,7 +112,7 @@ Este endpoint retorna detalhes de um usuário. Exige autenticação.
     }
     
   -------------
-### Remover Usuário
+### Remover Usuário <a id="deluser"></a>
 Este endpoint apaga o usuário autenticado. Exige autenticação.
 
 **Requisição HTTP**
@@ -108,7 +123,7 @@ Este endpoint apaga o usuário autenticado. Exige autenticação.
 
     HTTP 204 No Content
   -------------
-### Adicionar Post
+### Adicionar Post <a id="addpost"></a>
 Este endpoint cria um novo post. Exige autenticação.
 
 **Requisição HTTP**
@@ -130,7 +145,7 @@ Este endpoint cria um novo post. Exige autenticação.
         "userId": 1
     }
   -------------
-### Listar Posts
+### Listar Posts<a id="lstpost"></a>
 Este endpoint lista todos posts. Exige autenticação.
 
 **Requisição HTTP**
@@ -169,7 +184,7 @@ Este endpoint lista todos posts. Exige autenticação.
         }
     ]
   -------------
-### Consultar Post
+### Consultar Post<a id="getpost"></a>
 Este endpoint retorna detalhes de um post. Exige autenticação.
 
 **Requisição HTTP**
@@ -200,7 +215,8 @@ Este endpoint retorna detalhes de um post. Exige autenticação.
         }
      }
    -------------
-### Editar Post
+   
+### Editar Post<a id="editpost"></a>
 Este endpoint atualiza um post. Exige autenticação. Exige que usuário autenticado seja autor do post.
 
 **Requisição HTTP**
@@ -229,7 +245,7 @@ Este endpoint atualiza um post. Exige autenticação. Exige que usuário autenti
         "userId": 1
     }
    -------------
-### Buscar Posts
+### Buscar Posts<a id="searchpost"></a>
 Este endpoint busca posts por título e conteúdo. Exige autenticação.
 
 **Requisição HTTP**
@@ -273,8 +289,10 @@ Este endpoint busca posts por título e conteúdo. Exige autenticação.
         }
     ]
   --------
- 
-### Remover Post
+
+
+
+### Remover Post<a id="delpost"></a>
 Este endpoint apaga um post. Exige autenticação. Usuário autenticado deve ser autor do post.
 
 **Requisição HTTP**

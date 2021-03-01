@@ -2,18 +2,21 @@
 API de CRUD de posts de blogs. Api desenvolvida para [desafio back-end da Trybe](https://github.com/betrybe/backend-test).  A API consiste em 11 endpoints para gerenciar usuários e posts. O projeto foi desenvolvido com em JavaScript, NodeJs (14.x), utilizando o framework [AdonisJS (4.1)](https://adonisjs.com/).
 Uma versão, publicada pela plataforma heroku, está disponível [aqui](https://api-blogposts.herokuapp.com/).
 ## Índice
-1. [Endpoints](#endpoints)
-	1.1 [Adicionar Usuário](#adduser) 
-	1.2 [Fazer Login](#login)
-	1.3 [Listar Usuários](#lstuser)
-	1.4 [Consultar Usuário](#getuser) 
-	1.5 [Remover Usuário](#deluser) 
-	1.6 [Adicionar Post](#addpost) 
-	1.7 [Listar Posts](#lstpost) 
-	1.8  [Consultar Post](#getpost)
-	1.9   [Editar Post](#editpost)
-	1.10 [Buscar Post](#searchpost) 
-	1.11 [Remover Post](#delpost) 
+ 1. [Endpoints](#endpoints)
+	
+	 1. [Adicionar Usuário](#adduser) 
+	 2.  [Fazer Login](#login)
+	 3.  [Listar Usuários](#lstuser)
+	 4.  [Consultar Usuário](#getuser) 
+	 5.  [Remover Usuário](#deluser) 
+	 6.  [Adicionar Post](#addpost) 
+	 7.  [Listar Posts](#lstpost) 
+	 8.   [Consultar Post](#getpost)
+	 9.    [Editar Post](#editpost)
+	 10.  [Buscar Post](#searchpost) 
+	 11.  [Remover Post](#delpost)
+
+ 
 2. [Autenticação](#autenticação)
 3. [Deploy](#deploy)
 

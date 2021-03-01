@@ -16,6 +16,10 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
+Route.get('/', ({ response }) => {
+    response.status(200).json({message: 'API de CRUD de posts de blogs. Api desenvolvida para desafio back-end da Trybe. A API consiste em 11 endpoints para gerenciar usuários e posts. Para mais detalhes acessar https://github.com/leitelff/api-blogposts'})
+})
+
 Route.post('/user', 'UserController.store')
 
 Route.post('/login', 'UserController.login')

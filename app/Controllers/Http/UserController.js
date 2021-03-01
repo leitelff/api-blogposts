@@ -47,7 +47,7 @@ class UserController {
 
         const token = await auth.generate(user)
 
-        return response.status(200).json({'token': `Bearer ${token.token}`})
+        return response.status(201).json({'token': `Bearer ${token.token}`})
     }
 
     async login ({ auth, request, response }) {
